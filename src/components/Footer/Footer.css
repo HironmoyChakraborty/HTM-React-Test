@@ -129,7 +129,7 @@
 }
 
 .hotel-niseko-info p a {
-  font-size: x-small;
+    font-size: x-small;
 }
 
 .hotel-niseko-logo {
@@ -142,63 +142,63 @@
 }
 
 .hotel-niseko-info a:hover {
-  color: #aa5a2f;
+    color: #aa5a2f;
 }
 .hotel-niseko-info p, .footer-legal {
-  text-align: left;
+    text-align: left;
 }
 
 @media (max-width: 1200px) {
   .footer-wrapper {
-    flex-direction: column;
-    align-items: center;
+      flex-direction: column;
+      align-items: center;
   }
 
   .footer-section {
-    align-items: center;
-    margin: 10px 0;
-    width: 100%;
+      align-items: center;
+      margin: 10px 0;
+      width: 100%;
   }
 
   .footer-input-group button {
-    display: flex;
-    float: right;
+      display: flex;
+      float: right;
   }
 
   .hotel-niseko-info p, .hotel-niseko-logo, .footer-legal {
-    text-align: center;
+      text-align: center;
   }
 }
 
 .footer-section h4, .footer-section p, .footer-section a {
-    text-align: center;
+      text-align: center;
 }
 
 .footer-input-group input, 
 .footer-input-group button {
-  width: 90%;
-  margin: 8px 0;
+    width: 90%;
+    margin: 8px 0;
 }
 
 .link-columns {
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
 }
 
 .link-column {
-  padding: 0 20px;
+    padding: 0 20px;
 }
 
 .hotel-niseko-info p, .hotel-niseko-logo, .footer-legal {
-  text-align: left;
+    text-align: left;
 }
 
 .footer-section a {
-  color: #666;
-  text-decoration: none;
+    color: #666;
+    text-decoration: none;
 }
 
 .footer-section a:hover {
-  color: #aa5a2f;
+    color: #aa5a2f;
 }

@@ -1,48 +1,47 @@
-/* src/App.css */
 .app {
-  text-align: center;
-  flex-wrap: wrap;
-  overflow-x: hidden;
+    text-align: center;
+    flex-wrap: wrap;
+    overflow-x: hidden;
 }
 
 input[type="text"] {
-  margin: 20px 0;
-  padding: 10px;
-  font-size: 16px;
+    margin: 20px 0;
+    padding: 10px;
+    font-size: 16px;
 }
 
 .searchbar {
-  background: #92b6c8; 
-  text-align: center;
-  padding: 20px;
-  margin: 20px 0
+    background: #92b6c8; 
+    text-align: center;
+    padding: 20px;
+    margin: 20px 0
 }
 
 .searchbar h1 {
-  font-size: 2.5em;
-  font-weight: 500;
-  line-height: 50px;
-  margin-bottom: 20px;
-  padding: 10px;
-  color: white;
-  font-family: cursive;
+    font-size: 2.5em;
+    font-weight: 500;
+    line-height: 50px;
+    margin-bottom: 20px;
+    padding: 10px;
+    color: white;
+    font-family: cursive;
 }
 
 .searchbar button {
-  margin: 8px 0;
-  appearance: none;
-  background: #aa5a2f;
-  border: none;
-  border-radius: 3px;
-  color: #fff;
-  cursor: pointer;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: .85em;
-  font-weight: 600;
-  padding: 10px 15px;
-  max-width: min-content;
+    margin: 8px 0;
+    appearance: none;
+    background: #aa5a2f;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .85em;
+    font-weight: 600;
+    padding: 10px 15px;
+    max-width: min-content;
 }
 
 .searchbar button:hover {
-  background-color: #555;
+    background-color: #555;
 }
