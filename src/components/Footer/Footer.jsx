@@ -9,7 +9,7 @@ function Footer() {
   return (
     <footer className="footer">
       <div className="footer-wrapper">
-        <div className="footer-section mailing-list">
+        <div className="footer-section">
           <h4>Hotel Nisekoi Mailing List</h4>
           <p>Be the first to receive exclusive offers and the latest news from Hotel Nisekoi</p>
           <div className="footer-input-group">
@@ -45,8 +45,8 @@ function Footer() {
             </div>
           </div>
         </div>
-        <div className="footer-section skye-niseko-info">
-          <img src={url()} alt="Copyright-free taken from Freepik" className="skye-niseko-logo" />
+        <div className="footer-section hotel-niseko-info">
+          <img src={url()} alt="Copyright-free taken from Freepik" className="hotel-niseko-logo" />
           <p>
                     Nisekoi Hirafuji 2-jo 3-chome 15-4,<br />
                     Kutchan-choi, Abuta-guni<br />
@@ -58,11 +58,8 @@ function Footer() {
              Email: <a style={{ fontSize: 'small', color: '#666' }} href="mailto:logo@hotelnisekoi.com">logo@hotelnisekoi.com</a></p>
           <p ><a href="#Terms">Terms & Conditions</a> | <a href="#Privacy">Privacy Policy</a></p>
           <p style={{ fontSize: 'x-small', color: '#666' }}> © 2024 Hotel Nisekoi.</p>
-
         </div>
       </div>
-
-
     </footer>
   );
 }

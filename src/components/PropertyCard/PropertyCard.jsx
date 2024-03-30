@@ -1,4 +1,5 @@
 import React from 'react';
+import "./PropertyCard.css";
 
 function PropertyCard({ property }) {
   const url = () => `${process.env.PUBLIC_URL}/assets/${property.name}.jpg`;

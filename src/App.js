@@ -35,7 +35,7 @@ function App() {
       {filteredProperties.length > 0 ? (
         <PropertyList properties={filteredProperties} />
       ) : (
-        <p>No properties match your search criteria.</p>
+        <h1>No properties match your search criteria.</h1>
       )}
       <Footer />
     </div>

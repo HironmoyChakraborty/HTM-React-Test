@@ -1,78 +1,77 @@
 .header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  background-color: #ffffff;
-  width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    width: 100%;
 }
 
 .header-top {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }
 
 .header-logo {
-  width: 200px;
-  margin: auto auto;
+    width: 200px;
+    margin: auto auto;
 }
 
 .nav-toggle {
-  display: none; 
-  background-color: #333;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
+    display: none; 
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
 }
 
 .header-contact, .header-nav {
-  display: flex;
-  gap: 10px;
-  align-items: center;
-  font-family: cursive;
-  font-size: 1.2em;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-family: cursive;
+    font-size: 1.2em;
 }
 
 .header-nav {
-  display: flex; 
-  justify-content: center; 
-  width: 100%;
-  
+    display: flex; 
+    justify-content: center; 
+    width: 100%;
 }
 
 .header-nav.show, .header-contact.show {
-  flex-direction: column; 
+    flex-direction: column; 
 }
 
 .header-contact a, .header-nav a {
-  text-decoration: none;
-  color: #333;
-  padding: 5px 10px;
+    text-decoration: none;
+    color: #333;
+    padding: 5px 10px;
 }
 
 .header-contact a:hover, .header-nav a:hover {
-  color: #aa5a2f;
+    color: #aa5a2f;
 }
 
 .header-top button {
-  margin: 0 20px;
+    margin: 0 20px;
 }
 
 @media (max-width: 768px) {
   .nav-toggle {
-    display: block; 
+      display: block; 
   }
 
   .header-contact, .header-nav {
-    display: none; 
-    width: 100%; 
+      display: none; 
+      width: 100%; 
   }
 
   .header-nav.show, .header-contact.show {
-    display: flex;
-    flex-direction: column;
+      display: flex;
+      flex-direction: column;
   }
 }

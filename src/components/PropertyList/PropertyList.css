@@ -9,4 +9,19 @@
     height: 100%;
     align-items: center;
     width: auto;
-  }
+}
+
+@media (min-width: 1200px) {
+    .property-list {
+        font-size: small;
+        text-align:left;
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+        margin-bottom: 15px;
+        overflow: hidden;
+        height: 100%;
+        align-items: center;
+        width: auto;
+    }
+}
