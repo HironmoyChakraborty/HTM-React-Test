@@ -1,0 +1,194 @@
+/* src/App.css */
+.app {
+  text-align: center;
+  flex-wrap: wrap;
+  overflow-x: hidden;
+}
+
+input[type="text"] {
+  margin: 20px 0;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.property-list {
+  font-size: small;
+  text-align:left;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  margin-bottom: 15px;
+  overflow: hidden;
+  height: 100%;
+  align-items: center;
+  width: auto;
+}
+
+.searchbar {
+  background: #92b6c8; /* Placeholder color */
+  text-align: center;
+  padding: 20px;
+  margin: 20px 0
+}
+
+.searchbar h1 {
+  font-size: 2.5em;
+  font-weight: 500;
+  line-height: 50px;
+  margin-bottom: 20px;
+  padding: 10px;
+  color: white;
+  font-family: cursive;
+}
+
+.searchbar button {
+  margin: 8px 0;
+  appearance: none;
+  background: #aa5a2f;
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: .85em;
+  font-weight: 600;
+  padding: 10px 15px;
+  max-width: min-content;
+}
+
+.searchbar button:hover {
+  background-color: #555;
+}
+
+.property-card {
+  /* styles to keep the property card consistent */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid rgba(204, 204, 204, 0.7);
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 10px;
+  width: auto;
+}
+
+
+
+
+
+.property-card img {
+  /* styles for the image to take full width on smaller screens */
+  width: 100%; /* full width of the card */
+  border-radius: 8px 8px 0 0; /* rounded corners on the top only */
+  padding: 0; /* reset any padding if needed */
+}
+
+.property-info {
+  /* styles for the info section */
+  width: 100%; /* full width of the card */
+  padding: 20px;
+}
+
+.button-container {
+  /* styles for the button container */
+  width: 100%; /* full width of the card */
+  padding: 20px; /* center the button */
+}
+/* src/App.css */
+/* General button styles, not specific to .property-info */
+.button-container button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+}
+
+.button-container button:hover {
+  background-color: #0056b3;
+}
+
+
+.property-info button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+}
+
+.property-info button:hover {
+  background-color: #0056b3;
+}
+
+
+
+.property-info h2, .property-info p, .property-info button {
+  margin: 10px 0; /* Add some vertical spacing */
+}
+
+.property-info button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.property-info button:hover {
+  background-color: #0056b3;
+}
+
+/* Adjustments for larger screens, if needed */
+@media (min-width: 1200px) {
+  .property-card {
+    flex-direction: row; /* side-by-side layout */
+    height: 200px; /* fixed height */
+  }
+
+  .property-card img {
+    width: 30.333%; /* one third of the card */
+    height: 90%; /* full height of the card */
+    border-radius: 8px 0 0 8px; /* rounded corners on the left only */
+    padding-left: 9px; /* spacing from the left edge */
+  }
+
+  .property-info {
+    flex: 1; /* take remaining space */
+    padding-left: 20px; /* spacing from the image */
+    padding-right: 20px; /* spacing before the separator line */
+    max-width: 400px;
+  }
+
+  .button-container {
+    width: auto; /* width according to content */
+    flex: none; /* do not grow or shrink */
+    padding: 0 20px; /* padding on both sides */
+    justify-content: flex-end; /* align button to the right */
+  }
+}
+
+/* Adjustments for medium screens if needed */
+@media (max-width: 1199px) {
+  .separator-line {
+    display: none; /* hide the separator line */
+  }
+
+  .property-card {
+    /* make sure the card is flexible on medium screens */
+    flex-direction: column;
+    height: auto;
+  }
+
+  .button-container {
+    justify-content: flex-end;
+  }
+  .property-card img {
+    height: 95%;
+    width: 95%;
+    margin-top: 2.5%;
+  }
+}

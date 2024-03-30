@@ -1,0 +1,216 @@
+.footer {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  background-color: #f5f5f5;
+  font-family: 'Arial', sans-serif;
+  max-width: 100%;
+  flex-wrap: wrap; /* Allow the footer content to wrap */
+}
+
+
+.footer-wrapper {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Aligns section content to the start */
+  margin: 20px; /* Increased margin for additional space between sections */
+  min-width: 220px; /* Minimum width to ensure readability */
+  max-width: 270px; /* Maximum width for consistent sizing */
+}
+
+.footer-section h4 {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+.footer-section p {
+  color: #a7b0b5;
+  font-size: .8em;
+  padding: 10px 0;
+  text-align: left;
+}
+
+.footer-section a {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 8px;
+  text-align: left; /* Adjusted for consistent text alignment */
+}
+
+.footer-input-group {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align input group to the start */
+}
+
+.footer-input-group input {
+  width: 90%; /* Reduced width for visual padding */
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: small;
+}
+
+.footer-input-group input:focus {
+  border: 1px solid #bb3535;
+}
+
+.footer-input-group button {
+  margin: 8px 0;
+  appearance: none;
+  background: #aa5a2f;
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: .85em;
+  font-weight: 600;
+  padding: 10px 15px;
+  max-width: min-content;
+}
+
+.footer-input-group button:hover {
+  background-color: #555;
+}
+
+.link-columns {
+  margin-top: 44px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.link-column {
+  padding-right: 20px; /* Adjusted padding for closer column spacing */
+  color: #666;
+  font-size: 1.01em;
+  font-family: cursive;
+}
+
+.link-column a {
+  display: block;
+  text-align: left;
+  font-size: .95em;
+  text-decoration: none; /* Ensures links are not underlined by default */
+}
+
+.link-column a:hover {
+  color: #aa5a2f;
+}
+
+.contact-info {
+  text-align: left; /* Adjusted for consistent alignment with other sections */
+}
+
+.skye-niseko-info {
+  /* Styles specific to the new Skye Niseko Info section */
+  align-items: flex-start;
+  font-family: cursive;
+}
+
+.skye-niseko-info p {
+  font-size: 0.8em;
+  color: #666;
+  margin:0;
+}
+
+.skye-niseko-info p a {
+font-size: x-small;
+}
+
+.skye-niseko-logo {
+  max-width: 100px; /* Adjust based on your logo size */
+}
+
+/* Ensure links within the new section are styled consistently with those in the rest of the footer */
+.skye-niseko-info a {
+  color: #666;
+  text-decoration: none;
+}
+
+.skye-niseko-info a:hover {
+  color: #aa5a2f;
+}
+.skye-niseko-info p, .footer-legal {
+  text-align: left;
+}
+
+
+/* Responsive layout adjustments */
+/* Responsive layout adjustments */
+@media (max-width: 1200px) {
+  .footer-wrapper {
+    /* Layout adjustments for smaller screens */
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-section {
+    /* Adjustments to footer sections for smaller screens */
+    align-items: center;
+    margin: 10px 0;
+    width: 100%; /* Allow sections to take full width */
+  }
+
+  .footer-input-group button {
+    display: flex;
+    float: right;
+  }
+
+  .skye-niseko-info p, .skye-niseko-logo, .footer-legal {
+    text-align: center;
+  }
+}
+
+/* Footer sections base styles */
+.footer-section h4, .footer-section p, .footer-section a {
+  text-align: center;
+}
+
+/* Input and button styles */
+.footer-input-group input, 
+.footer-input-group button {
+  width: 90%;
+  margin: 8px 0;
+}
+
+/* Link columns for link section */
+.link-columns {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.link-column {
+  padding: 0 20px;
+}
+
+/* Styling for legal information and logo */
+.skye-niseko-info p, .skye-niseko-logo, .footer-legal {
+  text-align: left;
+}
+
+/* Ensure links are styled consistently */
+.footer-section a {
+  color: #666;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  color: #aa5a2f;
+}
