@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import './App.css'; // Make sure your CSS path is correct
+import './App.css'; 
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import PropertyList from './components/PropertyList/PropertyList';
-import propertiesData from './data/properties.json'; // Adjust path as necessary
+import propertiesData from './data/properties.json';
 
 function App() {
   const [inputValue, setInputValue] = useState('');

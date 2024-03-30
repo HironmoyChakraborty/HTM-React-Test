@@ -8,9 +8,7 @@ function Footer() {
 
   return (
     <footer className="footer">
-      {/* Wrapper for all sections to control alignment and spacing */}
       <div className="footer-wrapper">
-        {/* Mailing List Section */}
         <div className="footer-section mailing-list">
           <h4>Hotel Nisekoi Mailing List</h4>
           <p>Be the first to receive exclusive offers and the latest news from Hotel Nisekoi</p>
@@ -21,8 +19,6 @@ function Footer() {
             <button>Subscribe</button>
           </div>
         </div>
-
-        {/* Links Section */}
         <div className="footer-section links">
           <h4>Connect with Hotel Nisekoi</h4>
           <div className="link-columns">
@@ -49,9 +45,7 @@ function Footer() {
             </div>
           </div>
         </div>
-        {/* New Skye Niseko Info Section */}
         <div className="footer-section skye-niseko-info">
-          {/* Skye Niseko logo placeholder - Implement according to your project's asset management */}
           <img src={url()} alt="Copyright-free taken from Freepik" className="skye-niseko-logo" />
           <p>
                     Nisekoi Hirafuji 2-jo 3-chome 15-4,<br />

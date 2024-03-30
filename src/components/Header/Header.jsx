@@ -27,7 +27,7 @@ function Header() {
   return (
     <header className="header">
       <div className="header-top">
-        <img src={url()} alt="Skye Niseko" className="header-logo" />
+        <img src={url()} alt="Hotel Niseko" className="header-logo" />
         <button onClick={toggleNav} className="nav-toggle">Menu</button>
       </div>
       <div className={`header-nav ${isNavVisible ? 'show' : ''}`}>

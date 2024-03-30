@@ -15,12 +15,12 @@
 }
 
 .header-logo {
-  width: 200px; /* Adjust based on your logo size */
+  width: 200px;
   margin: auto auto;
 }
 
 .nav-toggle {
-  display: none; /* Hide by default */
+  display: none; 
   background-color: #333;
   color: white;
   padding: 10px 20px;
@@ -37,14 +37,14 @@
 }
 
 .header-nav {
-  display: flex; /* Ensure this is flex to align items */
-  justify-content: center; /* Center the items */
+  display: flex; 
+  justify-content: center; 
   width: 100%;
   
 }
 
 .header-nav.show, .header-contact.show {
-  flex-direction: column; /* Stack items vertically in mobile view */
+  flex-direction: column; 
 }
 
 .header-contact a, .header-nav a {
@@ -63,16 +63,16 @@
 
 @media (max-width: 768px) {
   .nav-toggle {
-    display: block; /* Show the toggle button on smaller screens */
+    display: block; 
   }
 
   .header-contact, .header-nav {
-    display: none; /* Hide by default on smaller screens */
-    width: 100%; /* Take full width */
+    display: none; 
+    width: 100%; 
   }
 
   .header-nav.show, .header-contact.show {
     display: flex;
-    flex-direction: column; /* Show when toggled */
+    flex-direction: column;
   }
 }

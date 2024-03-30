@@ -11,21 +11,8 @@ input[type="text"] {
   font-size: 16px;
 }
 
-.property-list {
-  font-size: small;
-  text-align:left;
-  display: flex;
-  flex-direction: column;
-  padding: 15px;
-  margin-bottom: 15px;
-  overflow: hidden;
-  height: 100%;
-  align-items: center;
-  width: auto;
-}
-
 .searchbar {
-  background: #92b6c8; /* Placeholder color */
+  background: #92b6c8; 
   text-align: center;
   padding: 20px;
   margin: 20px 0
@@ -61,7 +48,6 @@ input[type="text"] {
 }
 
 .property-card {
-  /* styles to keep the property card consistent */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -72,30 +58,22 @@ input[type="text"] {
   width: auto;
 }
 
-
-
-
-
 .property-card img {
-  /* styles for the image to take full width on smaller screens */
-  width: 100%; /* full width of the card */
-  border-radius: 8px 8px 0 0; /* rounded corners on the top only */
-  padding: 0; /* reset any padding if needed */
+  width: 100%; 
+  border-radius: 8px 8px 0 0; 
+  padding: 0; 
 }
 
 .property-info {
-  /* styles for the info section */
-  width: 100%; /* full width of the card */
+  width: 100%; 
   padding: 20px;
 }
 
 .button-container {
-  /* styles for the button container */
-  width: 100%; /* full width of the card */
-  padding: 20px; /* center the button */
+  width: 100%; 
+  padding: 20px; 
 }
-/* src/App.css */
-/* General button styles, not specific to .property-info */
+
 .button-container button {
   padding: 10px 20px;
   border-radius: 5px;
@@ -126,7 +104,7 @@ input[type="text"] {
 
 
 .property-info h2, .property-info p, .property-info button {
-  margin: 10px 0; /* Add some vertical spacing */
+  margin: 10px 0; 
 }
 
 .property-info button {
@@ -142,43 +120,40 @@ input[type="text"] {
   background-color: #0056b3;
 }
 
-/* Adjustments for larger screens, if needed */
 @media (min-width: 1200px) {
   .property-card {
-    flex-direction: row; /* side-by-side layout */
-    height: 200px; /* fixed height */
+    flex-direction: row; 
+    height: 200px; 
   }
 
   .property-card img {
-    width: 30.333%; /* one third of the card */
-    height: 90%; /* full height of the card */
-    border-radius: 8px 0 0 8px; /* rounded corners on the left only */
-    padding-left: 9px; /* spacing from the left edge */
+    width: 30.333%; 
+    height: 90%; 
+    border-radius: 8px 0 0 8px; 
+    padding-left: 9px; 
   }
 
   .property-info {
-    flex: 1; /* take remaining space */
-    padding-left: 20px; /* spacing from the image */
-    padding-right: 20px; /* spacing before the separator line */
+    flex: 1; 
+    padding-left: 20px; 
+    padding-right: 20px; 
     max-width: 400px;
   }
 
   .button-container {
-    width: auto; /* width according to content */
-    flex: none; /* do not grow or shrink */
-    padding: 0 20px; /* padding on both sides */
-    justify-content: flex-end; /* align button to the right */
+    width: auto; 
+    flex: none; 
+    padding: 0 20px; 
+    justify-content: flex-end; 
   }
 }
 
-/* Adjustments for medium screens if needed */
 @media (max-width: 1199px) {
   .separator-line {
-    display: none; /* hide the separator line */
+    display: none; 
   }
 
   .property-card {
-    /* make sure the card is flexible on medium screens */
     flex-direction: column;
     height: auto;
   }
