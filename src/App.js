@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import './App.css'; // Make sure your CSS path is correct
-import Header from './components/Header';
-import Footer from './components/Footer';
-import PropertyList from './components/PropertyList';
+import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
+import PropertyList from './components/PropertyList/PropertyList';
 import propertiesData from './data/properties.json'; // Adjust path as necessary
 
 function App() {

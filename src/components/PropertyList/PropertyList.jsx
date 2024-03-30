@@ -1,6 +1,6 @@
 // src/components/PropertyList.js
 import React from 'react';
-import PropertyCard from './PropertyCard';
+import PropertyCard from '../PropertyCard/PropertyCard';
 
 function PropertyList({ properties }) {
   return (
