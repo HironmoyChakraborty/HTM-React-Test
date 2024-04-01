@@ -6,7 +6,7 @@ function PropertyCard({ property }) {
 
   return (
     <div className="property-card">
-      <img src={url()} alt={property.name} />
+      <img src={url()} alt={"Copyright-Free taken from Pixabay"} />
       <div className="property-info">
         <h2 style={{margin:"8px 8px", fontSize: "x-large"}}>{property.name}</h2>
         <p style={{color: 'GrayText', fontFamily:'cursive', margin:"8px 8px"}}>{property.description}</p>

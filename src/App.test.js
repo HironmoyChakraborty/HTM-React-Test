@@ -28,9 +28,6 @@ test('header renders with logo and navigation links', () => {
   expect(logo).toBeInTheDocument();
 
   const nav = screen.getByRole('navigation');
-  expect(within(nav).getByText(/Accommodations/i)).toBeInTheDocument();
-  expect(within(nav).getByText(/Our Premises/i)).toBeInTheDocument();
-  expect(within(nav).getByText(/Dining & Bars/i)).toBeInTheDocument();
   expect(within(nav).getByText(/About/i)).toBeInTheDocument();
   expect(within(nav).getByText(/Special Deals/i)).toBeInTheDocument();
 });

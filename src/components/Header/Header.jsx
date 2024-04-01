@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Header.css';
+import navData from "../../data/header-navigationLinks.json";
 
 function Header() {
   const [isNavVisible, setIsNavVisible] = useState(false);
@@ -32,11 +33,9 @@ function Header() {
       </div>
       <div className={`header-nav ${isNavVisible ? 'show' : ''}`}>
         <nav>
-          <a href="#Accommodations">Accommodations</a>
-          <a href="#OurPremises">Our Premises</a>
-          <a href="#DiningBars">Dining & Bars</a>
-          <a href="#about">About</a>
-          <a href="#special-deals">Special Deals</a>
+          {navData.navLinks.map(link => (
+            <a key={link.href} href={link.href}>{link.text}</a>
+          ))}
         </nav>
       </div>
     </header>

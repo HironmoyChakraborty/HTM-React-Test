@@ -1,15 +1,14 @@
 import React from 'react';
 import './Footer.css';
+import footerLinksList from '../../data/footerLinks.json';
 
 function Footer() {
-  const url = () => {
-    return `${process.env.PUBLIC_URL}/assets/hotel logo.jpg`;
-  };
+  const url = () => `${process.env.PUBLIC_URL}/assets/hotel logo.jpg`;
 
   return (
     <footer className="footer">
       <div className="footer-wrapper">
-        <div className="footer-section">
+      <div className="footer-section">
           <h4>Hotel Nisekoi Mailing List</h4>
           <p>Be the first to receive exclusive offers and the latest news from Hotel Nisekoi</p>
           <div className="footer-input-group">
@@ -22,27 +21,13 @@ function Footer() {
         <div className="footer-section links">
           <h4>Connect with Hotel Nisekoi</h4>
           <div className="link-columns">
-          <div className="link-column">
-            <a href="#Accommodations">Accommodations</a>
-            <a href="#OurPremises">Our Premises</a>
-            <a href="#DiningBars">Dining & Bars</a>
-            <a href="#SpaWellness">Spa & Wellness</a>
-            <a href="#GuestServices">Guest Services</a>
-            <a href="#SkiServicesEquipment">Ski Services</a>
-            <a href="#LocationDirections">Location</a>
-            <a href="#OnlineWalkthrough">Vitual Tour</a>
-            <a href="#CurrentViews">Current Views</a>
-            </div>
-            <div className="link-column">
-            <a href="#QuickRegistration">Registration</a>
-            <a href="#FAQ">FAQ</a>
-            <a href="#LatestUpdates">Latest Updates</a>
-            <a href="#EventsActivities">Events</a>
-            <a href="#Careers">Careers</a>
-            <a href="#PropertyManagementt">Owners</a>
-            <a href="#InvestmentOpportunities">Investment</a>
-            <a href="#Contact">Contact</a>
-            </div>
+            {footerLinksList.footerLinks.map((column, columnIndex) => (
+              <div key={columnIndex} className="link-column">
+                {column.map((link, linkIndex) => (
+                  <a key={linkIndex} href={link.href}>{link.text}</a>
+                ))}
+              </div>
+            ))}
           </div>
         </div>
         <div className="footer-section hotel-niseko-info">
@@ -65,5 +50,3 @@ function Footer() {
 }
 
 export default Footer;
-
-

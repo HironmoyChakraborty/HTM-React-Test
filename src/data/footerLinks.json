@@ -1,0 +1,25 @@
+{
+    "footerLinks": [
+      [
+        { "href": "#Accommodations", "text": "Accommodations" },
+        { "href": "#OurPremises", "text": "Our Premises" },
+        { "href": "#DiningBars", "text": "Dining & Bars" },
+        { "href": "#SpaWellness", "text": "Spa & Wellness" },
+        { "href": "#GuestServices", "text": "Guest Services" },
+        { "href": "#SkiServicesEquipment", "text": "Ski Services" },
+        { "href": "#LocationDirection", "text": "Location" },
+        { "href": "#VirtualTou", "text": "Vitual Tour" },
+        { "href": "#CurrentViews", "text": "Current Views" }
+      ],
+      [
+        { "href": "#Registration", "text": "Registration" },
+        { "href": "#FAQ", "text": "FAQ" },
+        { "href": "#LatestUpdates", "text": "Latest Updates" },
+        { "href": "#EventsActivities", "text": "Events" },
+        { "href": "#Careers", "text": "Careers" },
+        { "href": "#PropertyManagement", "text": "Owners" },
+        { "href": "#InvestmentOpportunities", "text": "Investment" },
+        { "href": "#Contact", "text": "Contact" }
+      ]
+    ]
+  }

@@ -1,0 +1,9 @@
+{
+    "navLinks" : [
+        { "href": "#Accommodations", "text": "Accommodations" },
+        { "href": "#OurPremises", "text": "Our Premises" },
+        { "href": "#DiningBars", "text": "Dining & Bars" },
+        { "href": "#about", "text": "About" },
+        { "href": "#special-deals", "text": "Special Deals" }
+    ]
+}
